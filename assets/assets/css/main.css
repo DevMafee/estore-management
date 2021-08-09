@@ -1,0 +1,486 @@
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@font-face {
+  font-family: "SFUIDisplay-Regular";
+  src: url("../fonts/SF-UI-Display-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/SF-UI-Display-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SF-UI-Display-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/SF-UI-Display-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/SF-UI-Display-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/SF-UI-Display-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SF-UI-Display-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BhagirathiMJ";
+  src: url("../fonts/BhagirathiMJ.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/BhagirathiMJ.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/BhagirathiMJ.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/BhagirathiMJ.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/BhagirathiMJ.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/BhagirathiMJ.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/BhagirathiMJ.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BhagirathiMJ-Bold";
+  src: url("../fonts/BhagirathiMJBold/BhagirathiMJBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/BhagirathiMJBold/BhagirathiMJBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/BhagirathiMJBold/BhagirathiMJBold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/BhagirathiMJBold/BhagirathiMJBold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/BhagirathiMJBold/BhagirathiMJBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/BhagirathiMJBold/BhagirathiMJBold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/BhagirathiMJBold/BhagirathiMJBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SutonnyMJ-Bold";
+  src: url("../fonts/SutonnyMJ-Bold/SutonnyMJ-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/SutonnyMJ-Bold/SutonnyMJ-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SutonnyMJ-Bold/SutonnyMJ-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/SutonnyMJ-Bold/SutonnyMJ-Bold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/SutonnyMJ-Bold/SutonnyMJ-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/SutonnyMJ-Bold/SutonnyMJ-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SutonnyMJ-Bold/SutonnyMJ-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SutonnyOMJ";
+  src: url("../fonts/SutonnyOMJ/SutonnyOMJ.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/SutonnyOMJ/SutonnyOMJ.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SutonnyOMJ/SutonnyOMJ.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/SutonnyOMJ/SutonnyOMJ.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/SutonnyOMJ/SutonnyOMJ.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/SutonnyOMJ/SutonnyOMJ.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/SutonnyOMJ/SutonnyOMJ.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+
+}
+body {
+  margin: 0;
+  font-family: 'SutonnyOMJ', sans-serif;
+  font-size: 14px;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ *  
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ *  
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+a,
+a:hover,
+a:visited{
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * 
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+
+img{
+  max-width: 100%;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+ 
+ p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+ }
+
+
+
+main.main-body {
+    display: flex;
+    width: 100%;
+}
+
+.login-body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/loginbody-bg.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.login-inner-container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 20px;
+    /* box-shadow: 0 0 5px 5px #b1b1b136; */
+    background: url(../img/login-inner-bg.png);
+    max-height: 650px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+} 
+
+.left-box {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.login-title-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-title-info img {
+    max-width: 160px;
+    margin-bottom: 30px;
+}
+
+.login-title-info h4 {
+    margin-bottom: 10px;
+    color: #006837;
+    font-size: 26px;
+}
+
+.login-title-info h1 {
+    color: #414042;
+    margin: 0;
+    font-size: 36px;
+}
+
+.right-box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #F1F2F2;
+    border-radius: 15px;
+    height: 100%;
+    background: url(../img/login-right-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.form-title {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-title h1 {
+    font-size: 26px;
+    color: #58595B;
+    margin-bottom: 0;
+}
+
+.input-box {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #B3B3B3;
+    font-size: 14px;
+
+}
+.input-box label {
+    margin: 0;
+    cursor: pointer;
+}
+.input-box img {
+    width: 25px;
+    margin-right: 10px;
+    padding: 5px;
+}
+.input-item {
+    width: 100%;
+    background: #ffffff;
+    border: 0;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.round-checkbox {
+    position: relative;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.round-checkbox label {
+  background-color: #fff;
+  border: 1px solid #006837;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.round-checkbox label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 5px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+
+.round-checkbox input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round-checkbox input[type="checkbox"]:checked + label {
+  background-color: #006837;
+  border-color: #006837;
+}
+
+.round-checkbox input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.submit-box {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.submit-box .forgot-pass{
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ec2227;
+}
+.submit-btn {
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    background: #006837ad;
+    padding: 0;
+    font-size: 24px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.create-account-btn-sec p {
+    color: #B3B3B3;
+}
+
+.create-account-btn-sec {
+    display: flex;
+    margin-top: 25px;
+}
+
+.create-account-btn-sec p a {
+    color: #006838;
+}
+
+
+.language-btn-sec {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+.language-btn-sec .language-btn {
+    width: auto;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    background: #2136aa;
+    font-size: 14px;
+    color: #ddd;
+    line-height: normal;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.language-btn-sec .language-btn:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.language-btn-sec .language-btn.selected {
+    background: #006837;
+}
+.language-btn-sec .language-btn:focus{
+    outline: 0;
+}
+.copyright-sec {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.copyright-sec p {
+    color: #A7A9AC;
+    font-size: 16px;
+}
+
+
+
+@media( max-width: 991px ){
+    .left-box {
+        width: 50%; 
+    }
+    .right-box{
+        width: 50%;
+    }
+}
+
+
+@media( max-width: 767px ){
+    .login-body {
+        background: #fff;
+        height: auto;
+    }
+    .login-inner-container{
+        flex-direction: column;
+        height: auto;
+        background: #fff;
+        padding: 20px 15px;
+            max-height: unset;
+    }
+    .left-box {
+        width: 100%; 
+    }
+    .login-title-info { 
+        margin-bottom: 25px;
+    }
+    .login-title-info img {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+    .login-title-info h4 {
+        margin-bottom: 10px; 
+        font-size: 20px;
+        font-weight: 600;
+    } 
+.login-title-info h1 { 
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+    .right-box {
+    padding: 50px 20px;
+    height: auto;
+    width: 100%;
+}
+.form-title h1 { 
+    font-weight: 600;
+}
+button.submit-btn {
+    font-weight: 600;
+}
+.copyright-sec p { 
+    font-size: 14px;
+}
+
+}

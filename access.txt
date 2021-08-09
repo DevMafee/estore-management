@@ -1,0 +1,19 @@
+System Admin
+user : 01718400017
+Pass : motj12345
+
+Store Manager
+user : 01717924757
+Pass : motj12345
+
+Approver
+user : 01711201332
+Pass : motj12345
+
+Employee / Normal User
+user : 01711402668
+Pass : motj12345
+
+Employee / Normal User
+user : 01552408754
+Pass : motj12345

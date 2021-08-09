@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "SutonnyOMJ";
+  src: url("./fonts/SutonnyOMJ.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SutonnyOMJ.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SutonnyOMJ.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SutonnyOMJ.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SutonnyOMJ.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SutonnyOMJ.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SutonnyOMJ.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

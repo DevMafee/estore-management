@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "BhagirathiMJ-Bold";
+  src: url("./fonts/BhagirathiMJBold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/BhagirathiMJBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/BhagirathiMJBold.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/BhagirathiMJBold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/BhagirathiMJBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/BhagirathiMJBold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/BhagirathiMJBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

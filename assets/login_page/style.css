@@ -1,0 +1,258 @@
+/* 
+*=================================================
+* Default Style
+*=================================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    line-height: 1.15;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    {
+    margin: 0;
+    padding: 0;
+}
+/* 
+*=================================================
+* Authentication Style
+*=================================================
+*/
+.authentication-layout {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.authentication-layout-inner {
+    width: 100%;
+    /* max-width: 1370px; */
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+/* 
+*==============================
+* Authentication layout left
+*==============================
+*/
+
+.authentication-layout-left {
+    width: 65%;
+    float: left;
+    /* background: url('../login_page/images/bg.png'); */
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 45px;
+    padding-top: 12.5%;
+}
+.authentication-layout-logo{
+    max-width: 600px;
+    text-align: center;
+}
+.authentication-layout-head {
+    width: 100%;
+    float: left;
+    margin-bottom: 150px;
+    padding-left: 40px;
+    max-width: 550px;
+}
+.authentication-layout-head h3{
+    font-size: 30px;
+    color: #006837;
+    font-family: "Lato";
+    font-weight: 900;
+}
+.authentication-layout-head h1{
+    font-size: 38px;
+    color: #1a1a1a;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.authentication-layout-head p{
+    font-size: 24px;
+    font-family: "Lato";
+    font-weight: 500;
+}
+/* 
+*==============================
+* Authentication layout Right
+*==============================
+*/
+.authentication-layout-right {
+    width: 35%;
+    float: left;
+    padding-top: 80px;
+    padding-right: 55px;
+    background: #1d63bb;
+    position: relative;
+    padding-top: 12.5%;
+    z-index: 1;
+}
+.authentication-layout-right:before {
+    content: "";
+    position: absolute;
+    left: -225px;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    background: #1d63bb;
+    z-index: -1;
+    transform: skewX(-24deg);
+}
+.authentication-layout-right::after{
+    content: "";
+    position: absolute;
+    background-image: url('../login_page/images/002.png');
+    width: 100%;
+    height: 100%;
+    left: -100px;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+.authentication-layout-tab-area {
+    width: 100%;
+    float: left;
+}
+.multi-language-sec{
+    text-align: right;
+    margin-bottom: 100px;
+}
+.button-green{
+    background-color:#ffffff;
+    padding: 5px 30px;
+}
+.button-green.active,.button-green:hover{
+    background-color: #4ab300 !important;
+    border-color: #4ab300 !important;
+}
+.button-green.focus{
+    box-shadow: none !important;
+}
+
+#signin h2{
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+
+.simec-pos-input-group {
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+}
+.simec-pos-input-box {
+    height: 65px;
+    border: 0;
+    background: #fff;
+    width: 100%;
+    border-radius: 0 10px 0 10px;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.card-body .input-group-text{
+    background-color: #ffffff;
+}
+
+
+.form-check-1{
+    margin: 50px 0 25px;
+    color: #ffffff;
+}
+.right_side_footer_bootom{
+    text-align: center;
+    color:#ffffff;
+}
+.right_side_footer_bootom p a{color: #00ffff;}
+.mobile_heading{display: none;}
+/* 
+*==============================
+* Submit Button
+*==============================
+*/
+button.simec-pos-submit-bitton {
+    float: right;
+    border: 0;
+    background: #4ab300;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 0 10px 0 10px;
+    padding: 10px 20px;
+}
+
+/* 
+*==============================
+* REesponsive
+*==============================
+*/
+@media( max-width: 1200px ){
+    .authentication-layout-left{width:60%;padding-left: 0; padding-right: 20px;}
+    .authentication-layout-right{width:40%;padding-left: 45px;}
+    .authentication-layout-right:before{position: relative;}
+}
+@media( max-width: 991px ){
+    .authentication-layout-head h3{font-size: 27px;}
+    .authentication-layout-head h1 {font-size: 32px;}
+@media( max-width: 767px ){
+    .authentication-layout-inner{display: block;max-width: 100%;height:inherit;}
+    .authentication-layout-left{width:100%;padding: 35px;}
+    .authentication-layout-logo{width:100%;max-width: 100%;}
+    .authentication-layout-head{width:100%;max-width: 100%;margin-bottom: 75px;padding: 0;text-align: center;}
+    .authentication-layout-head h3{margin-top: 10px;}
+    .authentication-layout-head h1{margin-top: 10px;}
+    .authentication-layout-right{width:100%; padding: 35px;border-top-right-radius: 50px;border-top-left-radius: 50px;margin-top: -50px;}
+    .authentication-layout-right:before{position: relative;}
+    .mobile_heading{display: block;text-align: center; margin-top: 15px;}
+    .mobile_heading h2{color: #ffffff;text-transform: uppercase;font-weight: 900;}
+    #signin h2{display: none;}
+    .multi-language-sec {text-align: center;margin-bottom: 50px;margin-top: 75px;}  
+    .simec-pos-input-group {text-align: center;margin: 30px 0 40px;float:none; }
+    button.simec-pos-submit-bitton{float:none;}
+    .right_side_footer_bootom{margin-bottom: 30px;}
+}
+@media( max-width: 450px ){
+    .authentication-layout-head h3{font-size: 20px;}
+    .authentication-layout-head h1{font-size: 30px;}
+    .authentication-layout-head p {font-size: 16px;}
+    .authentication-layout-right{padding: 15px;}
+    .authentication-layout-left{padding: 15px;}
+}
