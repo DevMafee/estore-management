@@ -176,7 +176,7 @@
                                 <button type="button" class="list-group-item"><?php echo $product; ?>
                                   <input type="hidden" name="" value="<?php echo $dd['requisitions_product']; ?>">
                                   <input type="hidden" name="<?php echo 'product_id_' . $head['requisitions_id'] . '[]'; ?>" value="<?php echo $dd['requisitions_product']; ?>">
-                                  <input type="number" name="<?php echo 'product_qty_' . $head['requisitions_id'] . '[]'; ?>" style="position: relative; float: right; margin-right: 10px; max-width: 60px !important; border-radius: 3px;p adding-left:5px; text-align:right;" id="<?php echo $head['requisitions_id'] . '_' . $dd['requisitions_product'] . '_qty'; ?>" value="<?php echo $dd['requisitions_product_qty']; ?>">
+                                  <input type="number" name="<?php echo 'product_qty_' . $head['requisitions_id'] . '[]'; ?>" style="position: relative; float: right; margin-right: 10px; max-width: 60px !important; border-radius: 3px;p adding-left:5px; text-align:right;" id="<?php echo $head['requisitions_id'] . '_' . $dd['requisitions_product'] . '_qty'; ?>" value="<?php echo $dd['requisitions_product_qty']>$qtttty?($qtttty>0?$qtttty:0):$dd['requisitions_product_qty']; ?>">
                                   <span class="badge teal" style=""><?php echo $_SESSION['LANGUAGE_SETTED']=='en'?'Requisition Quantity':'চাহিত পরিমান'; ?> - <?php echo $dd['requisitions_product_qty'] . ' ' . $product_unit; ?></span>&nbsp;
                                   <span class="badge orange" style=""><?php echo $_SESSION['LANGUAGE_SETTED']=='en'?'Rest Stock':'অবশিষ্ট মজুদ'; ?> - <?php echo ($limit-($rcv_this_month->approved_qty?$rcv_this_month->approved_qty:0)) . ' ' . $product_unit; ?></span>&nbsp;
                                   <span class="badge green" style=""><?php echo $_SESSION['LANGUAGE_SETTED']=='en'?'Received Quantity':'গৃহীত পরিমান'; ?> - <?php echo $rcv_this_month->approved_qty > 0 ? $rcv_this_month->approved_qty : '0' . ' ' . $product_unit; ?></span>
@@ -208,14 +208,14 @@
   function takeActionApprove(requisitions_id) {
     swal({
       title: "আপনি কি নিশ্চিত?",
-        text: "আপনি এটি আবার নিশ্চিত করতে সক্ষম হবেন না!",
-        type: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#DD6B55",
-        confirmButtonText: "হ্যাঁ, আমি নিশ্চিত",
-        cancelButtonText: "না, বন্ধ করুন!",
-        closeOnConfirm: false,
-        closeOnCancel: false
+      text: "আপনি এটি আবার নিশ্চিত করতে সক্ষম হবেন না!",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "হ্যাঁ, আমি নিশ্চিত",
+      cancelButtonText: "না, বন্ধ করুন!",
+      closeOnConfirm: false,
+      closeOnCancel: false
       },
       function(isConfirm) {
         if (isConfirm) {
